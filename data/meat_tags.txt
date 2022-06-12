@@ -1,0 +1,41 @@
+**Important tags**
+- class = "logo", 'a' href      # has freshtohom url link $XX
+- class = "email-subheading", href="tel"    #phone number  $XX
+
+Inside class = "order-details":
+- class = "no-link", span   #contains order no.
+- class = "no-link", p      #contains order placed datetime
+- class = "no-link", p      #contains delivery datetime 
+
+Inside class = "order-information":
+- td/th    #4 things in table: item, sku, qty, subtotal
+- td        # has 3 items from above columns
+- class = "price", td       #will go under subtotal ##2 rows
+- class = "price", span     #contains total price of order
+    
+    Inside class = "shipping", tr/td   #contains shipping text
+    - class = "price", tr/td/span   #shipping cost
+    
+    Inside class = "discount", tr/td   #free shipping text
+    - class = "price", tr/td/span   #minus shipping cost
+    
+    Inside class = "grand_total", tr/td   #grand total text
+    - class = "price", tr/td/span   #total order cost
+
+    Inside class = "amount_online", tr/td   #payment text
+    - class = "price", tr/td/span   #Payment due
+
+    Inside class = "amount_due", tr/td   #amt due text
+    - class = "price", tr/td/span   #payment left
+
+    Inside class = "address-details", td   # billed address
+    - class = "no-link", td/p/span   #name, address, no.
+
+    Inside class = "address-details", td   # shipping address
+    - class = "no-link", td/p/span   #name, address, no.
+
+    Inside class = "method-info", td/h6  #shipping method text
+    - td/p   #home delivery or whatever shipping it is
+
+    Inside class = "method-info", td/h6  #payment method text
+    - td/p   #online payment or whatever payment it is
